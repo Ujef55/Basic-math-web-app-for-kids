@@ -3,10 +3,10 @@
 :root {
    --number-one: #F96167;
    --number-two: #F9E795;
-   --operators: #00008B;
+   --operators: #5A96E3;
    --question-mark: #3A6B35;
    --option-one: #F96167;
-   --option-two: #00008B;
+   --option-two: #5A96E3;
    --option-three: #F9E795;
    --container-bg: #F96167;
    --body-bg: #EEEEEE;
@@ -47,6 +47,83 @@ ul li a {
     text-decoration: none;
 }
 
-.container .active {
-    text-decoration: underline;    
-}
+.active a::after{
+    content: '-';
+    font-size: 4px;
+    background-color: white;
+    display: block;
+  }
+
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: 82% 18%;
+  }
+
+
+  .equation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    font-size: 65px;
+    background: #fff;
+    border-radius: 3px;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+  }
+
+  .equation h1{
+    display: inline;
+    padding: 20px;
+  }
+
+  .answer-options{
+    font-size: 65px;
+    margin-right: 10px;
+  }
+
+  .options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    /* transition: 2s; */
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  }
+
+  .option-one {
+    background-color: var(--option-one);
+  }
+
+  .option-two {
+    background-color: var(--option-two);
+  }
+  
+  .option-three {
+    background-color: var(--option-three);
+  }
+
+  #num1 {
+    color: var(--number-one);
+  }
+  
+  #num2 {
+    color: var(--number-two);
+  }
+  
+  .operator {
+    color: var(--operators);
+  }
+
+  .equal {
+    color: var(--number-one);
+  }
+
+  .question {
+    color: var(--question-mark);
+  }
+  
