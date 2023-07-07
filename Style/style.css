@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+:root {
+   --number-one: #F96167;
+   --number-two: #F9E795;
+   --operators: #00008B;
+   --question-mark: #3A6B35;
+   --option-one: #F96167;
+   --option-two: #00008B;
+   --option-three: #F9E795;
+   --container-bg: #F96167;
+   --body-bg: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'boogaloo';
+    background-color: var(--body-bg);
+}
+
+.container {
+    background-color: var(--container-bg);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.container h1 {
+    font-size: 32px;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+}
+
+ul li a {
+    font-size: 24px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.container .active {
+    text-decoration: underline;    
+}
