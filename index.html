@@ -6,16 +6,37 @@
     <title>Math web app</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Basic math for kids</h1>
-        <ul>
-            <li>Add</li>
-            <li>Substract</li>
-            <li>Division</li>
-            <li>Multiplication</li>
-        </ul>
+    <header>
+        <div class="container">
+            <h1>Basic math for kids</h1>
+            <ul>
+                <li class="add"><a href="index.html">Addition</a></li>
+                <li><a href="substract.html">substraction</a></li>
+                <li><a href="multiply.html">Multiplication</a></li>
+                <li><a href="divide.html">Divison</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="equation">
+            <h1 id="num1">1</h1>
+            <h1>+</h1>
+            <h1 id="num2">1</h1>
+            <h1>=</h1>
+            <h1>?</h1>
+        </div>
+        <div class="answer-options">
+            <div class="options">
+              <h1 id="option1">1</h1>
+            </div>
+            <div class="options">
+              <h1 id="option2">2</h1>
+            </div>
+            <div class="options">
+              <h1 id="option3">3</h1>
+            </div>
+        </div>
     </div>
-
     <script src="/script/add.js"></script>
 </body>
 </html>
