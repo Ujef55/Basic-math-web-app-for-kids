@@ -6,12 +6,13 @@ let answer = 0;
 const generateEquation = () => {
 
         // random numbers
-        let num1 = Math.floor((Math.random() * 20));
-        let num2 = Math.floor((Math.random() * 20));
+        let num1 = Math.floor((Math.random() * 15));
+        let num2 = Math.floor((Math.random() * 15));
 
         // dummy answers 
-        const dummyAnswer1 = Math.floor(Math.random() * 40);
-        const dummyAnswer2 = Math.floor(Math.random() * 40);
+        const dummyAnswer1 = Math.floor(Math.random() * 30);
+        const dummyAnswer2 = Math.floor(Math.random() * 30);
+        let newAnswer = [];
 
         // correct answer
         answer = num1 + num2;
@@ -21,12 +22,21 @@ const generateEquation = () => {
         document.querySelector('#num1').innerHTML = num1;
         document.querySelector('#num2').innerHTML = num2;
 
+        // array of all the answers
+        const allAnswers = [answer, dummyAnswer1, dummyAnswer2];
+
+
         
+        // suffle allanswer array
+        for (i = allAnswers.length; i--;) {
+            newAnswer.push(allAnswers.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
+        }
+
 
         // changing inner html for answers
-        option1.innerHTML = answer;
-        option2.innerHTML = dummyAnswer1;
-        option3.innerHTML = dummyAnswer2;
+        option1.innerHTML = newAnswer[0];
+        option2.innerHTML = newAnswer[1];
+        option3.innerHTML = newAnswer[2];
     }
 
 
