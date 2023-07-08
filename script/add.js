@@ -45,7 +45,7 @@ option1.addEventListener('click', () => {
         if (option1.innerHTML == answer) {
             generateEquation();
         } else {
-            alert('You selected wrong answer');
+            alert('selected answer is wrong');
         }
 })
 
@@ -54,7 +54,7 @@ option2.addEventListener('click', () => {
     if (option2.innerHTML == answer) {
         generateEquation();
     } else {
-        alert('You selected wrong answer');
+        alert('selected answer is wrong');
     }
 })
 
@@ -63,7 +63,7 @@ option3.addEventListener('click', () => {
     if (option3.innerHTML == answer) {
         generateEquation();
     } else {
-        alert('You selected wrong answer');
+        alert('selected answer is wrong');
     }
 })
 
